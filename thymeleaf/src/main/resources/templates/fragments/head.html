@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html 	lang="ko"
+			xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="headFragment">
+	<title layout:title-pattern="$LAYOUT_TITLE - $CONTENT_TITLE"></title>
+	<meta charset="UTF-8" />
+	
+	<!-- 공통적인 css -->
+	<link rel="stylesheet" href="css/commons.css" />
+	
+	<!-- 개별적인 css -->
+	<th:block layout:fragment="css">
+		<!-- 이 빈공간에는 언젠가 개별적으로 css를 쓸때 해당 페이지에서 채워줄 것이여.. -->
+	</th:block>
+	
+</head>
+
+</html>
